@@ -3,8 +3,8 @@ export PATH="${HOME}/local/bin:${HOME}/local/bin/augustus/bin:${HOME}/local/bin/
 export AUGUSTUS_CONFIG_PATH="${HOME}/local/bin/augustus/config"
 
 python bin/busco/BUSCO.py \
---in data/Trinity.fasta \
---out new_mh_transcriptome \
+--in data/isoforms_by_expression.fasta \
+--out mh_transcriptome2_filtered_by_expression \
 --lineage data/endopterygota_odb9 \
 --mode transcriptome \
 --cpu 10 --species tribolium2012

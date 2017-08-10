@@ -2,8 +2,7 @@ library(readr)
 library(dplyr)
 library(ggplot2)
 
-busco_output <- list.files("run_mh_transcriptome",
-                           recursive = TRUE,
+busco_output <- list.files(recursive = TRUE,
                            pattern = ".tsv",
                            full.names = TRUE)
 busco_fulltables <- grep("full_table", busco_output, value = TRUE)
